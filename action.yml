@@ -1,4 +1,4 @@
-name: 'Setup OpenCV'
+name: 'Setup OpenCV 4'
 description: 'This action downloads, compiles and installs OpenCV using the informed version.'
 branding:
   icon: 'scissors'
