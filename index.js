@@ -35,8 +35,6 @@ async function run() {
             core.startGroup('Install dependencies');
             await exec.exec(
                 'sudo add-apt-repository "deb http://security.ubuntu.com/ubuntu xenial-security main"');
-            await exec.exec(
-                'sudo add-apt-repository "deb http://debian.net/debian jessie main"');
             await exec.exec('sudo apt-get update');
             await exec.exec('sudo apt-get remove x264 libx264-dev -y');
             await exec.exec(
@@ -46,7 +44,7 @@ async function run() {
                 'libavcodec-dev libavformat-dev libswscale-dev libdc1394-22-dev ' +
                 'libxine2-dev libv4l-dev ' +
                 'libgstreamer1.0-dev libgstreamer-plugins-base1.0-dev ' +
-                'qt5-default libgtk2.0-dev libtbb-dev ' +
+                'libgtk2.0-dev libtbb-dev ' +
                 'libatlas-base-dev ' +
                 'libfaac-dev libmp3lame-dev libtheora-dev ' +
                 'libvorbis-dev libxvidcore-dev ' +
